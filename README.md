@@ -15,7 +15,7 @@ The full python3 virtual environment is contained in the .env folder which conta
 ```bash
 source bashrc
 
-././rgb-to-hsv.py
+./rgb-to-hsv.py
 ```
 
 Produces images/result.jpg - which you can delete
@@ -29,3 +29,5 @@ Produces images/result.jpg - which you can delete
 ```
 deactivate
 ```
+
+
