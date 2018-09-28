@@ -3,7 +3,10 @@
 
 ## Linux Setup
 
-./setup.sh - sets up the Python3 virtual environment in the .env and installs Pillow
+./setup.sh - sets up the Python3 virtual environment in the venv folder and installs the Pillow image library
+
+## Virtual environment background information
+Virtual environments are optional but I use them to keep my machines python libraries clean. If you use a virtual environment you will need to activate the environment by sourcing the bashrc script. Then use the environment by executing python scripts.  After use the deactivate command to deactivate the virtualenvironment if you want to keep using the terminal outside the environment.
 
 
 ## Activate the python3 virtual environment
