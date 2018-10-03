@@ -64,16 +64,18 @@ I would prefer to use one programming language though more may be needed dependi
 
 
 ## Matplot backends
-Matplot may use several different backend modules for displaying imanges
 
-| GTKAgg | Agg rendering to a GTK 2.x canvas (requires PyGTK and pycairo or cairocffi; Python2 only) |
-| GTK3Agg | Agg rendering to a GTK 3.x canvas (requires PyGObject and pycairo or cairocffi) |
-| GTK | GDK rendering to a GTK 2.x canvas (not recommended and d eprecated in 2.0) (requires PyGTK and pycairo or cairocffi; Python2 only) |
-| GTKCairo | Cairo rendering to a GTK 2.x canvas (requires PyGTK and pycairo or cairocffi; Python2 only) |
-| GTK3Cairo	| Cairo rendering to a GTK 3.x canvas (requires PyGObject and pycairo or cairocffi) |
-| WXAgg| Agg rendering to to a wxWidgets canvas (requires wxPython) |
-| WX | Native wxWidgets drawing to a wxWidgets Canvas (not recommended and deprecated in 2.0) (requires wxPython) |
-| TkAgg | Agg rendering to a Tk canvas (requires TkInter) |
-| Qt4Agg | Agg rendering to a Qt4 canvas (requires PyQt4 or pyside) |
-| Qt5Agg | Agg rendering in a Qt5 canvas (requires PyQt5) |
-| macosx | Cocoa rendering in OSX windows (presently lacks blocking show() behavior when matplotlib is in non-interactive mode) |
+Matplot may use several different backend modules for displaying imanges
+|  *File*   | *Notes*                                   |
+|-----------|-------------------------------------------|
+| GTKAgg    | Agg rendering to a GTK 2.x canvas Python2 |
+| GTK3Agg   | Agg rendering to a GTK 3.x canvas         |
+| GTK       | GDK rendering to a GTK 2.x canvas Python2 |
+| GTKCairo  | Cairo rendering to a GTK 2.x canvas       |
+| GTK3Cairo | Cairo rendering to a GTK 3.x canvas       |
+| WXAgg     | Agg rendering to to a wxWidgets canvas    |
+| WX        | Native wxWidgets drawing to a wxWidgets   |
+| TkAgg     | Agg rendering to a Tk canvas              |
+| Qt4Agg    | Agg rendering to a Qt4 canvas             |
+| Qt5Agg    | Agg rendering in a Qt5 canvas             |
+| macosx    | Cocoa rendering in OSX windows            |
