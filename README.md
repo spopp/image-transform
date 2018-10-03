@@ -66,6 +66,7 @@ I would prefer to use one programming language though more may be needed dependi
 ## Matplot backends
 
 Matplot may use several different backend modules for displaying imanges
+
 |  *File*   | *Notes*                                   |
 |-----------|-------------------------------------------|
 | GTKAgg    | Agg rendering to a GTK 2.x canvas Python2 |
