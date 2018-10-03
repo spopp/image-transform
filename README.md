@@ -40,16 +40,18 @@ deactivate
 * http://www.spectralpython.net/ - Rquires Python 2.7
 * https://github.com/imagej/imagej.py Can run on Android - Requires Python 2.7, Java, Pyjnius, and imglib2-imglyb
 * https://sydney.edu.au/medicine/bosch/facilities/advanced-microscopy/user-support/ImageJ_FL_Image_Analysis.pdf
-* https://github.com/msolters/rainbow-vision/blob/master/visualize-colors.py - a hsv spectrum solution
+* https://github.com/msolters/rainbow-vision/blob/master/visualize-colors.py - a hsv spectrum solution -Ideas used in rgbspectrum.py
 
 
 ## Choices
 
-I would prefer to use one programming language though more may be needed depending on the choices made
+I would prefer to use python3 though other languages may be used. I would prefer to work in a vritual environment with no site-packages but found that I needed site-packeages to install matplotlib successfully.
 
-* ImageJ is written in Java, and can run on Android.  imagej.py is written in python and requires python 2, not 3
-* spectralpython requires python 2, not 3im
-* Scikit-image - scipy - compatible with python 3
+* ImageJ and ImageJ2 is written in Java, and can not be run on Android.  
+* imagej.py is written in python2 not 3
+* spectralpython requires python2, not 3
+* Scikit-image - scipy - compatible with python3
+
 
 
 ## Files
