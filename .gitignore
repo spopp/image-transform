@@ -38,6 +38,7 @@ cover/
 .mr.developer.cfg
 .project
 .pydevproject
+.vscode
 
 # Virtual Environment
 /venv
