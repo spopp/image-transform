@@ -63,6 +63,7 @@ I would prefer to use python3 though other languages may be used. I would prefer
 | requirements.txt      | Python packages to install | using pip |
 | rgb.-to-hsv.py        | RGB to HSV and back   | Does not work correctly |
 | rgbspectrum.py        | Spectrial analysis of image | Multi-Value Spectrum - works well |
+| Spectrum.ipynb        | jupyter notebook      | Runs code from rgbspectrym.py |
 
 
 ## Matplot backends

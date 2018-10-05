@@ -19,9 +19,7 @@ import colorsys
 
 from matplotlib import pyplot as plot
 from mpl_toolkits.mplot3d.axes3d import Axes3D
-
 from PIL import Image
-
 
 
 def rgb_spectrum(img, fname=None):

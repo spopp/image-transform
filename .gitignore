@@ -47,3 +47,4 @@ cover/
 # generated code
 
 .private
+.ipynb_checkpoints/
