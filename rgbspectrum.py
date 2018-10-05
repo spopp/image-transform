@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 """
 Purpose:
   To convert RGB to to multi-value HSV and plot the spectrum image
@@ -10,11 +10,13 @@ Usage:
   cd  image-transform
   source bashrc
 
-  ./rgbspectrum.py
+  ./rgbspectrum.py -f images/test.jpg
   or
-  python3 rgbspectrum.py
+  python3 rgbspectrum.py --filename images/test.jpg --outfile out/spectrum.jpg
+
 """
 
+import argparse
 import colorsys
 
 from matplotlib import pyplot as plot
@@ -22,14 +24,14 @@ from mpl_toolkits.mplot3d.axes3d import Axes3D
 from PIL import Image
 
 
-def rgb_spectrum(img, fname=None):
+def rgb_spectrum(img, outfile=None):
 
     """
     Create a multi-valued HSV Spectrum from an RGB
 
     Parameters:
     img - an opem image file of type PIL Image.Image
-    fname - optional output file name for saving the spectrial image produced
+    outfile - optional output file name for saving the spectrial image produced
 
     Return:
     matplotlib.pyplot Object
@@ -88,20 +90,26 @@ def rgb_spectrum(img, fname=None):
         ax.set_zlabel('Intensity')
         ax.set_title('Multi-value Spectrum')
 
-        if fname is not None:
-            print('Saving spectral image to {}'.format(fname))
-            fig.savefig(fname=fname, pad_inches=0.5)
+        if outfile is not None:
+            print('Saving spectral image to {}'.format(outfile))
+            fig.savefig(fname=outfile, pad_inches=0.5)
 
         return plot
 
 
 def main():
-    print('Reading image file images/test.jpg')
+    parser = argparse.ArgumentParser('Image file spectrial analysis')
+    parser.add_argument('-f', '--filename', required=True,
+                        help='Image file to read')
+    parser.add_argument('-o', '--outfile', required=False,
+                        help='Image file to write')
+    args = parser.parse_args()
 
+    print('Reading image file {}'.format(args.filename))
     # (1) Import the file to be analyzed
-    image_file = Image.open('images/test.jpg')
+    image_file = Image.open(args.filename)
 
-    plot = rgb_spectrum(image_file, fname='out/spectrum.jpg')
+    plot = rgb_spectrum(image_file, outfile=args.outfile)
     plot.show()
 
 
